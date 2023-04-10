@@ -1,0 +1,14 @@
+h {
+  &1 {
+    line-height: var(--bs-line-height-60);
+  }
+
+  &4 {
+    line-height: var(--bs-line-height-36);
+  }
+
+  &6 {
+    font-size: var(--bs-font-size-14);
+    line-height: var(--bs-line-height-22);
+  }
+}

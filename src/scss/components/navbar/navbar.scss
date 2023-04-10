@@ -1,0 +1,26 @@
+.navbar {
+  &-nav {
+    @media screen and (min-width: $screen-lg-min) {
+      min-width: 24.5rem;
+    }
+  }
+
+  .nav-link {
+    @include flex-box(center);
+    border-bottom: 0.125rem solid transparent;
+
+    @media screen and (min-width: $screen-lg-min) {
+      height: 4.5rem;
+      margin-bottom: -0.063rem;
+    }
+
+    &:hover,
+    &.active {
+      border-color: var(--bs-yellow);
+    }
+
+    &.active {
+      font-weight: var(--bs-font-weight-bold);
+    }
+  }
+}

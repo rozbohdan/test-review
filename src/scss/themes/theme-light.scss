@@ -1,0 +1,14 @@
+:root {
+  &, & .theme-light {
+    --bs-gray-300: #EEEEEE;
+    --bs-gray-400: #EBEBEB;
+    --bs-gray-600: #292929;
+    --bs-gray-800: #666666;
+    --bs-gray-900: #000000e6;
+    --bs-yellow: #ED7135;
+
+    $body-color: #292929;
+
+    --#{$variable-prefix}body-color: #{$body-color};
+  }
+}

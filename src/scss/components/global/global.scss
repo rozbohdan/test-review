@@ -1,0 +1,17 @@
+.bg {
+  &-light {
+    background-color: var(--bs-white) !important;
+  }
+}
+
+.text {
+  &-secondary {
+    color: var(--bs-gray-800) !important;
+  }
+}
+
+.fw {
+  &-medium {
+    font-weight: var(--bs-font-weight-medium);
+  }
+}

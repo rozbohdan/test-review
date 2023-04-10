@@ -1,0 +1,20 @@
+.dropdown {
+  &-toggle {
+    @include flex-box(center);
+    border: none;
+
+    &:after {
+      content: none;
+    }
+
+    &.show {
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+
+    svg {
+      @include boxSize(1.5rem);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@mixin boxSize($size) {
+  max-height: $size;
+  min-height: $size;
+  max-width: $size;
+  min-width: $size;
+}

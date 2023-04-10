@@ -1,0 +1,86 @@
+// Breakpoints values
+$screen-xs:      0;
+$screen-tin:     450px;
+$screen-sm-min:  576px;
+$screen-sm-max:  ($screen-sm-min - 1px);
+$screen-md-min:  768px;
+$screen-md-max:  ($screen-md-min - 1px);
+$screen-lg-min:  992px;
+$screen-lg-max:  ($screen-lg-min - 1px);
+$screen-xl-min:  1200px;
+$screen-xl-max:  ($screen-xl-min - 1px);
+$screen-xxl-min: 1400px;
+$screen-xxl-max: ($screen-xxl-min - 1px);
+$screen-extra:   1600px;
+
+:root {
+  //Main font
+  --bs-app-font:  'Commissioner', sans-serif;
+
+  // Fonts sizes
+  --bs-font-size-6:  0.375rem;
+  --bs-font-size-8:  0.5rem;
+  --bs-font-size-9:  0.5625rem;
+  --bs-font-size-10: 0.625rem;
+  --bs-font-size-11: 0.6875rem;
+  --bs-font-size-12: 0.75rem;
+  --bs-font-size-13: 0.8125rem;
+  --bs-font-size-14: 0.875rem;
+  --bs-font-size-15: 0.9375rem;
+  --bs-font-size-16: 1rem;
+  --bs-font-size-17: 1.0625rem;
+  --bs-font-size-18: 1.125rem;
+  --bs-font-size-20: 1.25rem;
+  --bs-font-size-22: 1.375rem;
+  --bs-font-size-24: 1.5rem;
+  --bs-font-size-26: 1.625rem;
+  --bs-font-size-28: 1.75rem;
+  --bs-font-size-30: 1.875rem;
+  --bs-font-size-32: 2rem;
+  --bs-font-size-36: 2.25rem;
+  --bs-font-size-38: 2.375rem;
+  --bs-font-size-40: 2.5rem;
+  --bs-font-size-42: 2.625rem;
+  --bs-font-size-46: 2.875rem;
+  --bs-font-size-48: 3rem;
+  --bs-font-size-52: 3.25rem;
+  --bs-font-size-58: 3.625rem;
+  --bs-font-size-60: 3.75rem;
+  --bs-font-size-64: 4rem;
+  --bs-font-size-72: 4.5rem;
+  --bs-font-size-80: 5rem;
+  --bs-font-size-102: 6.375rem;
+
+  //desktop line height
+  --bs-line-height-102:    --bs-font-size-102;
+  --bs-line-height-80:     --bs-font-size-80;
+  --bs-line-height-72:     --bs-font-size-72;
+  --bs-line-height-60:     --bs-font-size-60;
+  --bs-line-height-58:     --bs-font-size-58;
+  --bs-line-height-48:     --bs-font-size-48;
+  --bs-line-height-42:     --bs-font-size-42;
+  --bs-line-height-40:     --bs-font-size-40;
+  --bs-line-height-38:     --bs-font-size-38;
+  --bs-line-height-36:     --bs-font-size-36;
+  --bs-line-height-32:     --bs-font-size-32;
+  --bs-line-height-30:     --bs-font-size-30;
+  --bs-line-height-28:     --bs-font-size-28;
+  --bs-line-height-26:     --bs-font-size-26;
+  --bs-line-height-24:     --bs-font-size-24;
+  --bs-line-height-22:     --bs-font-size-22;
+  --bs-line-height-20:     --bs-font-size-20;
+  --bs-line-height-18:     --bs-font-size-18;
+  --bs-line-height-16:     --bs-font-size-16;
+  --bs-line-height-14:     --bs-font-size-14;
+  --bs-line-height-12:     --bs-font-size-12;
+  --bs-line-height-10:     --bs-font-size-10;
+  --bs-line-height-8:      --bs-font-size-8;
+
+  //border-radius
+  --bs-border-radius-middle:  0.5rem;
+  --bs-border-radius-largest: 6.25rem;
+
+  //font-weight
+  --bs-font-weight-bold:   700;
+  --bs-font-weight-medium: 500;
+}

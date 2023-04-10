@@ -1,0 +1,26 @@
+@import "app.tokens.styles";
+
+$font-assets-path: "../assets/fonts/Commissioner";
+$fonts-path: "#{$font-assets-path}";
+
+@mixin font-faces-Commissioner($flow-fonts, $assetPath) {
+  @each $face-name, $face-config in $flow-fonts {
+    $url: map-get($face-config, url);
+    $format: map-get($face-config, format);
+    @if $url and $format {
+      // build the src from the config
+      $src: url("#{$assetPath}/#{$url}") format("#{$format}");
+      // remove url and format properties from the config and add the src
+      $face-config: map-merge(map-remove($face-config, url, format), (src: $src));
+      @font-face {
+        // build the font face from the config
+        @each $name, $value in $face-config {
+          #{$name}: $value;
+        }
+      }
+    }
+  }
+}
+
+// font faces
+@include font-faces-Commissioner($fonts, $fonts-path);

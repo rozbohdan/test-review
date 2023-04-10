@@ -1,0 +1,6 @@
+.btn-group {
+  & > :not(.btn-check:first-child) + .btn,
+  & > .btn-group:not(:first-child) {
+    margin-left: 0;
+  }
+}

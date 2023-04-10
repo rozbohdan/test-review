@@ -1,0 +1,11 @@
+.gap {
+  &-5 {
+    gap: 2.625rem !important;
+  }
+
+  &-md-5 {
+    @media screen and (min-width: $screen-md-min) {
+      gap: 2.625rem !important;
+    }
+  }
+}

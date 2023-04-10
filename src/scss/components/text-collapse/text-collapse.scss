@@ -1,0 +1,20 @@
+.text-collapse {
+  &-text {
+    overflow: hidden;
+    display: -webkit-box;
+    max-height: 3rem;
+    text-overflow: ellipsis;
+    transition: 0.3s ease-in-out;
+    -webkit-box-orient: vertical;
+  }
+
+  &-button {
+    opacity: 0;
+    pointer-events: none;
+
+    &.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}

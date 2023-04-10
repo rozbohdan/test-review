@@ -1,0 +1,15 @@
+.mb {
+  &-4 {
+    margin-bottom: 2rem !important;
+  }
+
+  &-5 {
+    margin-bottom: 2.5rem !important;
+  }
+
+  &-lg-5 {
+    @media screen and (min-width: $screen-lg-min) {
+      margin-bottom: 2.5rem !important;
+    }
+  }
+}

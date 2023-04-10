@@ -1,0 +1,10 @@
+.card {
+  &-text {
+    color: var(--bs-gray-800);
+  }
+
+  &-img-top {
+    height: 12.5rem;
+    object-fit: cover;
+  }
+}
