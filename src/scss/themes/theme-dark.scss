@@ -13,3 +13,21 @@
   --#{$variable-prefix}body-color: #{$body-color};
   --#{$variable-prefix}body-bg: #{$body-bg};
 }
+
+:root {
+  @media (prefers-color-scheme: dark) {
+    --bs-gray-300: #666666;
+    --bs-gray-400: #9b9999;
+    --bs-gray-600: #9b9999;
+    --bs-gray-800: #fff;
+    --bs-gray-900: #9b9999;
+
+    $body-color: #eeeeee;
+    $body-bg: #292929;
+    $white-color: #292929;
+
+    --#{$variable-prefix}white: #{$white-color};
+    --#{$variable-prefix}body-color: #{$body-color};
+    --#{$variable-prefix}body-bg: #{$body-bg};
+  }
+}

@@ -1,0 +1,11 @@
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+  @media screen and (min-width: $screen-xxl-min) {
+    max-width: 1140px;
+    padding: 0;
+  }
+}

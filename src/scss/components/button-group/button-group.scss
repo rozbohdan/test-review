@@ -1,6 +1,13 @@
 .btn-group {
+  &.tabs {
+    .btn {
+      min-width: 5.5rem;
+    }
+  }
+
   & > :not(.btn-check:first-child) + .btn,
   & > .btn-group:not(:first-child) {
+    border-left: none;
     margin-left: 0;
   }
 }

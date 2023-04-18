@@ -1,8 +1,4 @@
-const COLLAPSE        = '[data-collapse]'
-const COLLAPSE_ACTION = '[data-collapse-action]'
-const COLLAPSE_TEXT   = '[data-collapse-text]'
-const OPEN_COLLAPSE   = 'collapseOpen'
-const COLLAPSES       = document.querySelectorAll(COLLAPSE)
+const COLLAPSE_ACTION = 'collapseAction'
 
 class Collapse {
   static attach() {
@@ -12,15 +8,6 @@ class Collapse {
 
   init() {
     this.applyListener()
-
-    for (let item of COLLAPSES) {
-      const itemAction = item.querySelector(COLLAPSE_ACTION)
-      const itemText = item.querySelector(COLLAPSE_TEXT)
-
-      if (itemText.scrollHeight >= '49') {
-        itemAction.classList.add('show')
-      }
-    }
   }
 
   applyListener() {
@@ -28,35 +15,33 @@ class Collapse {
       const element = e.target
 
       if (this.isCallCollapseElement(element)) {
-        const text = element.previousElementSibling
-
-        if (this.isOpened(text)) {
-          this.closeCollapse(text, element)
+        if (this.isOpened(element)) {
+          this.closeCollapse(element)
         } else {
-          this.openCollapse(text, element)
+          this.openCollapse(element)
         }
       }
     })
   }
 
   isCallCollapseElement(element) {
-    return element && OPEN_COLLAPSE in element.dataset
+    return element && COLLAPSE_ACTION in element.dataset
   }
 
-  openCollapse(text, element) {
-    text.classList.add('collapsed')
-    text.style.maxHeight = text.scrollHeight + 'px'
+  openCollapse(element) {
+    element.previousElementSibling.classList.add('collapsed')
+    element.previousElementSibling.style.maxHeight = element.previousElementSibling.scrollHeight + 'px'
     element.innerHTML = 'Collapse'
   }
 
-  closeCollapse(text, element) {
-    text.classList.remove('collapsed')
-    text.style.maxHeight = '3rem'
+  closeCollapse(element) {
+    element.previousElementSibling.classList.remove('collapsed')
+    element.previousElementSibling.style.maxHeight = '3rem'
     element.innerHTML = 'Show more...'
   }
 
-  isOpened(text) {
-    return text.classList.contains('collapsed')
+  isOpened(element) {
+    return element.previousElementSibling.classList.contains('collapsed')
   }
 }
 

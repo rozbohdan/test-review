@@ -2,6 +2,7 @@
   &-toggle {
     @include flex-box(center);
     border: none;
+    min-width: 4.75rem;
 
     &:after {
       content: none;

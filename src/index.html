@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap w/ Parcel</title>
     <link rel="stylesheet" href="scss/styles.scss">
-    <script type="module" src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -145,127 +144,14 @@
                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <div class="d-flex flex-wrap gap-2 gap-sm-3 justify-content-between align-items-center mb-1">
                             <h1 class="mb-0 fw-bold">All photos</h1>
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <div class="btn-group tabs" role="group" aria-label="Basic example">
                                 <button type="button" class="btn btn-dark">Newest</button>
                                 <button type="button" class="btn btn-outline-secondary">Latest</button>
                             </div>
                         </div>
                         <h6 class="fw-bold text-secondary mb-4">150 items</h6>
                         <div class="d-flex flex-column gap-4">
-                            <div class="row gap-4 gap-md-0 gap-lg-4 gap-xl-0">
-                                <div class="col col-12 col-md-6 col-lg-12 col-xl-6">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="./assets/images/thumbnail.png" alt="...">
-                                        <div class="card-body text-collapse" data-collapse>
-                                            <h4 class="card-title fw-bold">Heading</h4>
-                                            <p class="card-text text-collapse-text mb-2" data-collapse-text>
-                                                Here goes some sample, example text that is relatively short.
-                                            </p>
-                                            <a class="link-dark text-decoration-none text-collapse-button fw-medium d-flex mb-1" data-collapse-action data-collapse-open href="javascript:void(0);">
-                                                Show more...
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-flex flex-wrap gap-3">
-                                            <button type="button" class="btn btn-warning">Save to collection</button>
-                                            <button type="button" class="btn btn-outline-secondary">Share</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col-12 col-md-6 col-lg-12 col-xl-6">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="./assets/images/thumbnail.png" alt="...">
-                                        <div class="card-body text-collapse" data-collapse>
-                                            <h4 class="card-title fw-bold">Heading</h4>
-                                            <p class="card-text text-collapse-text mb-2" data-collapse-text>
-                                                And here full text doesn’t fit, and at the very end of it we should show a truncation. And here full text doesn’t fit, and at the very end of it we should show a truncation.
-                                            </p>
-                                            <a class="link-dark text-decoration-none text-collapse-button fw-medium d-flex mb-1" data-collapse-action data-collapse-open href="javascript:void(0);">
-                                                Show more...
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-flex flex-wrap gap-3">
-                                            <button type="button" class="btn btn-warning">Save to collection</button>
-                                            <button type="button" class="btn btn-outline-secondary">Share</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row gap-4 gap-md-0 gap-lg-4 gap-xl-0">
-                                <div class="col col-12 col-md-6 col-lg-12 col-xl-6">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="./assets/images/thumbnail.png" alt="...">
-                                        <div class="card-body text-collapse" data-collapse>
-                                            <h4 class="card-title fw-bold">Heading</h4>
-                                            <p class="card-text text-collapse-text mb-2" data-collapse-text>
-                                                And here full text doesn’t fit, and at the very end of it we should show a truncation. And here full text doesn’t fit, and at the very end of it we should show a truncation.
-                                            </p>
-                                            <a class="link-dark text-decoration-none text-collapse-button fw-medium d-flex mb-1" data-collapse-action data-collapse-open href="javascript:void(0);">
-                                                Show more...
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-flex flex-wrap gap-3">
-                                            <button type="button" class="btn btn-warning">Save to collection</button>
-                                            <button type="button" class="btn btn-outline-secondary">Share</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col-12 col-md-6 col-lg-12 col-xl-6">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="./assets/images/thumbnail.png" alt="...">
-                                        <div class="card-body text-collapse" data-collapse>
-                                            <h4 class="card-title fw-bold">Heading</h4>
-                                            <p class="card-text text-collapse-text mb-2" data-collapse-text>
-                                                Here goes some sample, example text that is relatively short.
-                                            </p>
-                                            <a class="link-dark text-decoration-none text-collapse-button fw-medium d-flex mb-1" data-collapse-action data-collapse-open href="javascript:void(0);">
-                                                Show more...
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-flex flex-wrap gap-3">
-                                            <button type="button" class="btn btn-warning">Save to collection</button>
-                                            <button type="button" class="btn btn-outline-secondary">Share</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row gap-4 gap-md-0 gap-lg-4 gap-xl-0">
-                                <div class="col col-12 col-md-6 col-lg-12 col-xl-6">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="./assets/images/thumbnail.png" alt="...">
-                                        <div class="card-body text-collapse" data-collapse>
-                                            <h4 class="card-title fw-bold">Heading</h4>
-                                            <p class="card-text text-collapse-text mb-2" data-collapse-text>
-                                                Here goes some sample, example text that is relatively short.
-                                            </p>
-                                            <a class="link-dark text-decoration-none text-collapse-button fw-medium d-flex mb-1" data-collapse-action data-collapse-open href="javascript:void(0);">
-                                                Show more...
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-flex flex-wrap gap-3">
-                                            <button type="button" class="btn btn-warning">Save to collection</button>
-                                            <button type="button" class="btn btn-outline-secondary">Share</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col col-12 col-md-6 col-lg-12 col-xl-6">
-                                    <div class="card h-100">
-                                        <img class="card-img-top" src="./assets/images/thumbnail.png" alt="...">
-                                        <div class="card-body text-collapse" data-collapse>
-                                            <h4 class="card-title fw-bold">Heading</h4>
-                                            <p class="card-text text-collapse-text mb-2" data-collapse-text>
-                                                And here full text doesn’t fit, and at the very end of it we should show a truncation. And here full text doesn’t fit, and at the very end of it we should show a truncation.
-                                            </p>
-                                            <a class="link-dark text-decoration-none text-collapse-button fw-medium d-flex mb-1" data-collapse-action data-collapse-open href="javascript:void(0);">
-                                                Show more...
-                                            </a>
-                                        </div>
-                                        <div class="card-footer d-flex flex-wrap gap-3">
-                                            <button type="button" class="btn btn-warning">Save to collection</button>
-                                            <button type="button" class="btn btn-outline-secondary">Share</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="row gap-4 gap-md-0 gap-lg-4 gap-xl-0 row-gap-4" data-cards-list></div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
@@ -281,5 +167,7 @@
             </div>
         </div>
     </section>
+
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>

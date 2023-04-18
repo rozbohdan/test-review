@@ -9,3 +9,9 @@
     }
   }
 }
+
+.row-gap {
+  &-4 {
+    row-gap: 1.5rem !important;
+  }
+}
